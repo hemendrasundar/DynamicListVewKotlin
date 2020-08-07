@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/item_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/item_tilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ttitle"
+        android:layout_alignTop="@id/item_iv"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/item_iv"/>
+    <TextView
+        android:id="@+id/item_tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="size"
+        android:textSize="15sp"
+        android:layout_below="@id/item_tilte"
+        android:layout_alignLeft="@id/item_tilte"/>
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/item_iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_tilte"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>
